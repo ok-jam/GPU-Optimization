@@ -1,1 +1,5 @@
-# GPU-Optimization
+# GPU - Optimization
+
+졸업작품 4인 팀 프로젝트
+
+딥러닝을 이용 전력소비에 따른 그래픽카드 최적화 시스템
