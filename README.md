@@ -34,21 +34,17 @@
 **개발 요구 사항** 
 
 - 비용 예측 모델 개발을 위한 GPU 작업 부하 프로파일링 모듈 개발
-
   딥러닝 학습의 단계별 메모리 할당량, 전력 소비량, 작업 시간을 측정하는 모듈 구현
 
 - 다중 요인을 고려한 비용 모델링 및 최적화 알고리즘 개발
-
   신재생 에너지 발전량, 지역의 전력 예산, 탄소 배출량 제한 등의 다중 요인을 가중치로 결합한 비용 모델링 진행
   제약 조건을 포함하는 비선형 최적화 알고리즘 구현
 
 - 딥러닝 학습에서의 GPU 최적화 시스템 구현
-
   딥러닝 학습과 GPU 최적화 시스템을 병렬 실행이 가능하도록 구현
   학습 반복마다 비용을 최소화하는 최적의 클럭 주파수 탐색 및 적용 기능 구현
 
 - 다중 파라미터 조절이 가능한 인터렉티브 대시보드 개발
-
   시각화 및 비용 상호작용 (비용 가중치 설정)을 위한 대시보드 구현
   GPU 학습시간 및 전력소비의 실시간 차트 출력
   설정한 비용 가중치를 GPU 최적화 시스템에 즉각적으로 반영
@@ -60,18 +56,6 @@
 4. 가중치에 따른 상황에서 GPU 최적화 알고리즘 구현
 5. 알고리즘을 적용한 GPU의 실시간 상황을 대시보드에 표시 및 비교
 
-**참고문헌**
-
-About cuda (https://www.infoworld.com/article/3299703/what-is-cuda-parallel-programming-for-gpus.html)
-
-재생에너지 발전을 통한 전력 비용 딥 러닝 처리를 위한 실시간 제어 (https://ieeexplore.ieee.org/abstract/document/8798637 )
-
-에너지 절약에 활용되는 GPU DVFS (https://www.sciencedirect.com/science/article/pii/S2352864816300736)
-
-An Interpretable Machine Learning Model Enhanced Integrated CPU-GPU DVFS Governor (https://dl.acm.org/doi/abs/10.1145/3470974)
-
-Is the powersave governor really saving power? (https://infoscience.epfl.ch/record/307797)
-
-Monitoring Nvidia GPUs using API (https://medium.com/devoops-and-universe/monitoring-nvidia-gpus-cd174bf89311)
-
-탄소공간지도 (https://www.carbonmap.kr/)
+**중간평가**
+중간평가에서 Dash를 이용한 웹구현보다 우선적으로 레퍼런스를 찾으며 그래픽카드에 우선적으로
+적용할 수 있는 알고리즘 (그래픽 카드의 성능을 낮추지만, 에너지 소비량을 줄일 수 있는 최적구간)을 찾고 데이터를 얻는 것을 최우선으로
