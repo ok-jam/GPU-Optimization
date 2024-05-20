@@ -1,2 +1,0 @@
-파이참 , 파이토치 , 750 ti, CUDA , CUDNN = 테스트 하는데 필요한 프로그램
-2개 테스트 , vggnet과 resnet
