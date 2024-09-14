@@ -92,7 +92,7 @@ Dash를 이용한 웹구현을 우선시 하기보다 레퍼런스에서 그래�
  
  성능을 측정하고 모델화하여 테스트, 그 결과 클럭과 연산성능은 선형적 관계를 형성
 
- 가장 전성비가 좋은 구간을 SweetSpot으로 활용
+ 가장 성능대비 전력소모량이 좋은 구간을 SweetSpot으로 활용
 
  https://github.com/Haenote/GPU-Optimization/blob/main/%EB%82%B4%EB%B6%80%EC%9A%94%EC%9D%B8/SweetSpot%20%EC%B0%BE%EA%B8%B0.md
 
