@@ -96,7 +96,8 @@ Dash를 이용한 웹구현을 우선시 하기보다 레퍼런스에서 그래�
 
  https://github.com/Haenote/GPU-Optimization/blob/main/%EB%82%B4%EB%B6%80%EC%9A%94%EC%9D%B8/SweetSpot%20%EC%B0%BE%EA%B8%B0.md
 
- 최종적으로 두 가지 방법을 합쳐서 적용
- 
+ **3) 두 가지 방법을 합쳐서 적용한 데이터**
+
+
  https://github.com/Haenote/GPU-Optimization/blob/main/%EB%82%B4%EB%B6%80%EC%9A%94%EC%9D%B8/SweetSpot%EA%B3%BC%20FFT%EB%A5%BC%20%EB%8F%99%EC%8B%9C.md
 
