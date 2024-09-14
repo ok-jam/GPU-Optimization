@@ -1,7 +1,6 @@
 # GPU - Optimization
 
 4학년 4인 팀 프로젝트
-
 딥러닝을 이용한 전력소비, 탄소 배출량 등 환경적 에너지의 외부적 요인을 적용한 그래픽 카드 최적화 시스템
 
 웹앱과 데이터베이스를 통해 실시간으로 그래픽 카드의 상황을 표시
@@ -85,7 +84,7 @@ Dash를 이용한 웹구현을 우선시 하기보다 레퍼런스에서 그래�
  딥러닝은 Epoch룰 수행할 때, GPU 사용량과 Power, Memory등 일정한 주기가 발생
  이를 FFT를 사용하여 노이즈를 줄여 주기를 찾음
 
- 
+ https://github.com/users/Haenote/projects/2?pane=issue&itemId=67814662
 
 **2) 파워모델과 성능모델을 이용 SweetSpot 찾기**
 
@@ -95,6 +94,5 @@ Dash를 이용한 웹구현을 우선시 하기보다 레퍼런스에서 그래�
 
  가장 전성비가 좋은 구간을 SweetSpot으로 활용
 
- 
-
+ https://github.com/users/Haenote/projects/2?pane=issue&itemId=67814940
 
