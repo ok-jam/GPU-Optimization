@@ -1,4 +1,3 @@
-# Python에서 FFT를 이용하여 딥러닝시 GPU의 클럭 특징 감지
 
 ## FFT(Fast Fourier Transform)
 두 가지 주파수를 이용하여 FFT의 활용을 보여드리겠습니다.
