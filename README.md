@@ -84,7 +84,7 @@ Dash를 이용한 웹구현을 우선시 하기보다 레퍼런스에서 그래�
  딥러닝은 Epoch룰 수행할 때, GPU 사용량과 Power, Memory등 일정한 주기가 발생
  이를 FFT를 사용하여 노이즈를 줄여 주기를 찾음
 
- https://github.com/users/Haenote/projects/2?pane=issue&itemId=67814662
+ https://github.com/Haenote/GPU-Optimization/blob/main/%EB%82%B4%EB%B6%80%EC%9A%94%EC%9D%B8/FFT%EB%A5%BC%20%ED%99%9C%EC%9A%A9.md
 
 **2) 파워모델과 성능모델을 이용 SweetSpot 찾기**
 
@@ -94,5 +94,9 @@ Dash를 이용한 웹구현을 우선시 하기보다 레퍼런스에서 그래�
 
  가장 전성비가 좋은 구간을 SweetSpot으로 활용
 
- https://github.com/users/Haenote/projects/2?pane=issue&itemId=67814940
+ https://github.com/Haenote/GPU-Optimization/blob/main/%EB%82%B4%EB%B6%80%EC%9A%94%EC%9D%B8/SweetSpot%20%EC%B0%BE%EA%B8%B0.md
+
+ 최종적으로 두 가지 방법을 합쳐서 적용
+ 
+ https://github.com/Haenote/GPU-Optimization/blob/main/%EB%82%B4%EB%B6%80%EC%9A%94%EC%9D%B8/SweetSpot%EA%B3%BC%20FFT%EB%A5%BC%20%EB%8F%99%EC%8B%9C.md
 
