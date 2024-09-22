@@ -1,0 +1,67 @@
+import subprocess
+from datetime import datetime
+
+def set_power_limit(gpu_index, power_limit):
+    command = f"nvidia-smi -i {gpu_index} -pl {power_limit}"
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+    print(result.stdout)
+
+def set_clock_speed(gpu_index, min_clock, max_clock):
+    command = f"nvidia-smi -i {gpu_index} -lgc {min_clock},{max_clock}"
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+    print(result.stdout)
+
+def set_memory_clock(gpu_index, memory_clock):
+    command = f"nvidia-smi -i {gpu_index} -lmc {memory_clock}"
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+    print(result.stdout)
+
+def adjust_gpu_settings():
+    # 현재 날짜와 시간 가져오기
+    current_datetime = datetime.now()
+    current_month = current_datetime.month
+    current_hour = current_datetime.hour
+    
+    print(f"현재 월: {current_month}, 현재 시: {current_hour}")
+    
+    # GPU 인덱스 (0번 GPU 기준으로 설정)
+    gpu_index = 0
+
+    # 여름 (6~8월) 및 봄/가을 (3~5월, 9~10월)
+    if current_month in [6, 7, 8, 3, 4, 5, 9, 10]:
+        if 22 <= current_hour or current_hour < 8:  # 최고 성능
+            print("최고 성능 설정")
+            set_power_limit(gpu_index, 250)    # 전력 제한 250W
+            set_clock_speed(gpu_index, 1800, 2100)  # 클럭 1800-2100 MHz
+            set_memory_clock(gpu_index, 7000)  # 메모리 클럭 7000 MHz
+        elif (11 <= current_hour < 12) or (13 <= current_hour < 18):  # 최저 성능
+            print("최저 성능 설정")
+            set_power_limit(gpu_index, 150)    # 전력 제한 150W
+            set_clock_speed(gpu_index, 1200, 1600)  # 클럭 1200-1600 MHz
+            set_memory_clock(gpu_index, 5000)  # 메모리 클럭 5000 MHz
+        else:  # 보통 성능
+            print("보통 성능 설정")
+            set_power_limit(gpu_index, 200)    # 전력 제한 200W
+            set_clock_speed(gpu_index, 1500, 1800)  # 클럭 1500-1800 MHz
+            set_memory_clock(gpu_index, 6000)  # 메모리 클럭 6000 MHz
+
+    # 겨울 (11~2월)
+    elif current_month in [11, 12, 1, 2]:
+        if 22 <= current_hour or current_hour < 8:  # 최고 성능
+            print("최고 성능 설정")
+            set_power_limit(gpu_index, 250)    # 전력 제한 250W
+            set_clock_speed(gpu_index, 1800, 2100)  # 클럭 1800-2100 MHz
+            set_memory_clock(gpu_index, 7000)  # 메모리 클럭 7000 MHz
+        elif (9 <= current_hour < 12) or (16 <= current_hour < 19):  # 최저 성능
+            print("최저 성능 설정")
+            set_power_limit(gpu_index, 150)    # 전력 제한 150W
+            set_clock_speed(gpu_index, 1200, 1600)  # 클럭 1200-1600 MHz
+            set_memory_clock(gpu_index, 5000)  # 메모리 클럭 5000 MHz
+        else:  # 보통 성능
+            print("보통 성능 설정")
+            set_power_limit(gpu_index, 200)    # 전력 제한 200W
+            set_clock_speed(gpu_index, 1500, 1800)  # 클럭 1500-1800 MHz
+            set_memory_clock(gpu_index, 6000)  # 메모리 클럭 6000 MHz
+
+# GPU 설정 조정 함수 호출
+adjust_gpu_settings()
